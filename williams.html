@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Name - Products</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Orbitron', sans-serif;
+    }
+    .product-img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    .btn-custom {
+      background-color: #e60000;
+      color: white;
+    }
+    .sidebar {
+      position: sticky;
+      top: 0;
+    }
+    
+  </style>
+</head>
+<body class="bg-light">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #e60000;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/f1.png" alt="F1 Store" style="height: 40px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html">Cart</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container py-5">
+    <div class="row">
+      <!-- Sidebar: Team List -->
+      <div class="col-md-3">
+        <div class="list-group">
+            <a href="alpine.html" class="list-group-item list-group-item-action active">BWT Alpine</a>
+            <a href="astonmartin.html" class="list-group-item list-group-item-action">Aston Martin Aramco</a>
+            <a href="ferrari.html" class="list-group-item list-group-item-action">Scuderia Ferrari HP</a>
+            <a href="haas.html" class="list-group-item list-group-item-action">Moneygram Haas</a>
+            <a href="mclaren.html" class="list-group-item list-group-item-action">Mclaren Racing</a>
+            <a href="mercedes.html" class="list-group-item list-group-item-action">Mercedes AMG Petronas</a>
+            <a href="rb.html" class="list-group-item list-group-item-action">Visa Cashapp Racing Bulls</a>
+            <a href="redbull.html" class="list-group-item list-group-item-action">Oracle Red Bull Racing</a>
+            <a href="sauber.html" class="list-group-item list-group-item-action">Stake Kick Sauber</a>
+            <a href="williams.html" class="list-group-item list-group-item-action">Atlassian Williams</a>
+          <!-- Add more teams as needed -->
+        </div>
+      </div>
+
+      <!-- Product Grid: Displaying Team Products -->
+      <div class="col-md-9">
+        <h2 class="text-danger mb-4">Merchandise</h2>
+
+        <div class="row">
+          <!-- Product 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="images/williamsshirt.png" alt="Team Name Product 1" class="card-img-top product-img">
+              <div class="card-body text-center">
+                <h5 class="card-title">Atlassian Williams 2025 Mens Team Tee</h5>
+                <p class="card-text">$29.99</p>
+                <a href="williamsproduct1.html" class="btn btn-custom">View Product</a>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Add more products as needed -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>F1 Store</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    body {
+      background-color: #ffffff;
+      font-family: 'Orbitron', sans-serif;
+      color: #000000;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #e10600; /* Formula 1 red */
+    }
+
+    .navbar-brand,
+    .navbar-nav .nav-link {
+      color: #ffffff !important;
+      font-weight: bold;
+    }
+
+    .navbar-nav .nav-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Hero Section */
+    header {
+      background-color: #3b3b3b;
+      color: #ffffff;
+    }
+
+    /* Product Cards */
+    .card {
+      border: 2px solid #e10600;
+    }
+
+    .btn-primary {
+      background-color: #e10600;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #b20000;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #000000;
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="images/f1.png" alt="F1 75 Logo" style="height: 50px; width: auto;"
+            >
+          </a>
+          
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="py-5 text-center">
+    <div class="container">
+      <h1 class="display-4">F1 FASTTRACK</h1>
+      <p class="lead">Shop for the latest Formula 1 merchandise and ticket deals</p>
+    </div>
+  </header>
+
+  <!-- Featured Products -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Section Titles -->
+        <div class="col-md-4 text-center mb-3">
+          <h2 class="text-danger">Featured Products</h2>
+        </div>
+        <div class="col-md-4 text-center mb-3">
+          <h2 class="text-danger">Meet the Grid</h2>
+        </div>
+        <div class="col-md-4 text-center mb-3">
+          <h2 class="text-danger">Best Deals</h2>
+        </div>
+      </div>
+  
+      <div class="row">
+        <!-- Featured Products -->
+        <div class="col-md-4 d-flex">
+          <div class="card flex-fill">
+            <img src="images/lewiscap.jpg" class="card-img-top" alt="F1 Cap" width="500" height="400"/>
+            <div class="card-body text-center">
+              <h5 class="card-title">Scuderia Ferrari 2025 Lewis Hamilton Cap</h5>
+              <p class="card-text">$89.99</p>
+              <a href="alpine.html" class="btn btn-primary">View Products</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Meet the Grid -->
+        <div class="col-md-4 d-flex">
+          <div class="card flex-fill text-center">
+            <img src="images/rookies.jpg" class="card-img-top" alt="Meet the Grid" width="500" height="400" />
+            <div class="card-body">
+                <h5 class="card-title">Get to know the current F1 drivers and their teams.</h5>
+                <p class="card-text">Watch the Latest Highlights</p>
+              <a href="drivers.html" class="btn btn-primary">View Drivers</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Best Deals -->
+        <div class="col-md-4 d-flex">
+          <div class="card flex-fill text-center">
+            <img src="images/tourist.jpg" class="card-img-top" alt="F1 Deals" width="500" height="400" />
+            <div class="card-body">
+                <h5 class="card-title">Find the Best Deals in Grand Prix Tickets.</h5>
+                 <p class="card-text">HOT! Great Deal on Monaco GP</p>
+              <a href="deals.html" class="btn btn-primary">Explore Deals</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Footer -->
+  <footer class="text-center py-3">
+    &copy; 2025 F1 Store | For Academic Uses Only
+  </footer>
+
+</body>
+</html>

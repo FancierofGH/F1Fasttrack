@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product - F1 Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #e10600;">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/f1.png" alt="F1 75 Logo" style="height: 50px; width: auto;">
+
+      </a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Product Section -->
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="images/alpinehood.png" class="img-fluid" alt="Product Name">
+      </div>
+      <div class="col-md-6">
+        <h2>BWT Alpine Formula One Team’s Official Soft Shell Jacket - Lapis Blue</h2>
+        <p class="text-muted">$24.99</p>
+        <p>Available in: Large</p>
+        <button class="btn btn-danger" onclick="addToCart('alpine-jacket', 'BWT Alpine Formula One Team’s Official Soft Shell Jacket - Lapis Blue', 24.99)">Add to Cart</button>
+        <br><br>
+        <a href="alpine.html" class="btn btn-outline-secondary">Back to Products</a>
+      </div>
+    </div>
+  </div>
+
+ 
+
+  <script>
+    function addToCart(id, name, price) {
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      let item = cart.find(p => p.id === id);
+      if (item) {
+        item.quantity += 1;
+      } else {
+        cart.push({ id, name, price, quantity: 1 });
+      }
+      localStorage.setItem('cart', JSON.stringify(cart));
+      alert(name + ' added to cart!');
+    }
+  </script>
+
+</body>
+</html>
